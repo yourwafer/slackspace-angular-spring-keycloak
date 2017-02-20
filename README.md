@@ -1,8 +1,28 @@
 # Authentication with Spring Boot, AngularJS and Keycloak
 
-- Make sure to start Keycloak before using the application
+## Requirement
+### Tools
+
+virtualbox
+
+docker-machine
+
+docker-compose
+
+## Local development
+
+cd keycloak
+
+docker-machine create -d virtualbox --virtualbox-memory 4096 --virtualbox-cpu-count 4 default
+ 
+eval $(docker-machine env default)
+
+docker-compose up
 
 ## Run with standalone Tomcat
+
+### Requirement:
+    JDK1.8
 
 To run the project with embedded Tomcat by maven:
 
